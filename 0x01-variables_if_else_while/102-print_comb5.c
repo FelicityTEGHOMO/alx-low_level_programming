@@ -7,32 +7,26 @@
  */
 int main(void)
 {
-	int i;
-	int j;
-	int k;
-	int l;
-	int nine = 48 + 9;
+	int num1, num2;
 
-	for (i = 48; i <= nine; i++)
-		for (j = 48; j <= nine; j++)
-			for (k = 48; k <= nine; k++)
-				for (l = 48; l <= nine; l++)
-					if ((i < k) || (i == k && j < l))
-					{
-						putchar(i);
-						putchar(j);
-						putchar(' ');
-						putchar(k);
-						putchar(l);
-						if (i < nine
-						|| j < nine - 1
-						|| k < nine
-						|| l < nine)
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
+	for (num1 = 0; num1 <= 98; num1++)
+	{
+		for (num2 = num1 + 1; num2 <= 99; num2++)
+		{
+			putchar((num1 / 10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar(' ');
+			putchar((num2 / 10) + '0');
+			putchar((num2 % 10) + '0');
+
+			if (num1 == 98 && num2 == 99)
+				continue;
+
+			putchar(',');
+			putchar(' ');
+		}
+	}
+
 	putchar('\n');
 
 	return (0);
