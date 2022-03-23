@@ -1,4 +1,4 @@
-#include "main.h"
-#include <stdio.h>
-int main(void)
-	
+#ifndef MAIN_H
+#define  MAIN_H
+void reset_to_98(int *n);
+#endif
