@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
   *_puts - print a string
   *@str: the contains of a string
