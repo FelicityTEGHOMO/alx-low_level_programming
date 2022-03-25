@@ -1,11 +1,11 @@
 /**
-  * print rev_string - reverse a string
+  * rev_string - reverse a string
   * @s: the string
   */
 void rev_string(char *s)
 {
 	int size = 0;
-	int i;
+	int i = 0;
 	char c;
 
 	while (*(s + size))
